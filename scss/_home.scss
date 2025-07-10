@@ -2,7 +2,10 @@
 .hm_mainvisual {
   position: relative;
   .mv_item {
-    background: url(../imgs/home/bg-banner.gif) no-repeat center center / 100% auto;
+    background-image: url(../imgs/home/bg-banner.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     height: 757px;
     position: relative;
     z-index: 1;
@@ -66,12 +69,12 @@
       }
       .mv_btn{
         display: flex;
-        gap: 8px;
-        margin-top: 13px;
+        gap: 15px;
+        margin-top: 57px;
         @include sp {
          flex-direction: column;
          gap: 8px;
-         margin-top: 11px;
+         margin-top: 13px;
         }
         a {
           color: $bg01;
