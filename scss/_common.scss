@@ -144,6 +144,9 @@ header {
     }
   }
 }
+header.is-fixed .hd_nav_main li:not(:last-child) a {
+  color: $txt-color !important;
+}
 .spmenu {
 	background: #fff;
 	display: none;
@@ -254,7 +257,7 @@ header {
       padding: 9px 16px;
       position: relative;
       &:hover {
-        background: $hover-color;
+        background: #2C353B;
       }
 		}
 	}
@@ -267,22 +270,6 @@ header {
     line-height: 156%;
     padding: 6px 2.7px 11px;
     position: relative;
-		&:before {
-			background: #fff;
-			bottom: 0;
-			border-radius: 5px;
-			content: '';
-			display: block;
-			height: 3px;
-			left: 0;
-			position: absolute;
-			right: 100%;
-			transition: $transition;
-			width: auto;
-		}
-		&:hover:before {
-			right: 0;
-		}
 	}
 }
 #wrap_all {

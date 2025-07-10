@@ -1,74 +1,14 @@
 // Main Visual Section
 .hm_mainvisual {
   position: relative;
-  .slick-dots {
-    align-items: center;
-    bottom: 54px;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    position: absolute;
-    right: 50px;
-    li {
-      width: auto;
-      button {
-        background: #ffd85a; 
-        border: none;
-        border-radius: 50%;
-        font-size: 0; 
-        height: 10px;
-        opacity: .7;
-        padding: 0;
-        transition: all 0.3s ease;
-        width: 90px;
-        max-width: 10px;
-        &:hover {
-          cursor: pointer;
-        }
-      }
-      &.slick-active {
-        button {
-          border-radius: 25px;
-          max-width: 70px; 
-          opacity: 1;
-        }
-      }
-    }
-    @include sp {
-      bottom: 18px;
-      right: 20px;
-      li {
-        button {
-          height: 4px;
-          max-width: 4px;
-        }
-        &.slick-active {
-          button {
-            border-radius: 20px;
-            max-width: 28px; 
-          }
-        }
-      }
-    }
-  }
   .mv_item {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 100vh;
+    background: url(../imgs/home/bg-banner.gif) no-repeat center center / 100% auto;
+    height: 757px;
     position: relative;
-    &:before {
-      background: rgba(0,78,222,.7);
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
+    z-index: 1;
     @include sp {
       background-size: auto 100%;
-      height: 435px;
+      height: 500px;
     }
   }
   .mv_inner {
@@ -76,53 +16,109 @@
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    .mv_block {
-      margin: 0 auto;
-      max-width: $base-width;
-      .mv_cnt {
-        max-width: 634px;
-        color: #fff;
-        .mv_ttl {
-          line-height: 1.44;
-          margin-bottom: 30px;
-          font-size: 50px;
-          font-weight: bold;
-          @include sp {
-            font-size: 28px;
-            margin-bottom: 17px;
-          }
+    .mv_cnt {
+      max-width: 73%;
+      color: #fff;
+      @include sp {
+        max-width: 100%;
+      }
+      .mv_ttl {
+        line-height: 100%;
+        margin-bottom: 19px;
+        letter-spacing: 1.5px;
+        font-size: 70px;
+        font-weight: 400;
+        span{
+        color: $span01;
+        }
+        @include sp {
+          font-size: 30px;
+          letter-spacing: -0.9px;
+          margin-bottom: 13px;
+        }
+      }
+      .mv_sub-ttl{
+        line-height: 100%;
+        margin-bottom: 57px;
+        letter-spacing: 5px;
+        font-size: 48px;
+        font-weight: 400;
+        @include sp {
+          font-size: 20px;
+          margin-bottom: 17px;
+        letter-spacing: 0;
+        }
+      }
+      .mv_desc{
+        font-family: $sub-font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        letter-spacing: 0;
+        width: 79%;
+        span{
+        font-weight: 900;
+        }
+        @include sp {
+          font-size: 14px;
+          width: 100%;
+        }
+      }
+      .mv_btn{
+        display: flex;
+        gap: 8px;
+        margin-top: 13px;
+        @include sp {
+         flex-direction: column;
+         gap: 8px;
+         margin-top: 11px;
         }
         a {
-          background: #FFED7D url(images/ico/arrow-icon-w.png) no-repeat center right 10px;
-          background-size: 24px auto;
-          border-radius: 10px;
-          color: $base-color;
+          color: $bg01;
+          border: 1px solid #FFFFFF;
           display: block;
-          font-weight: bold;
-          margin-top: 66px;
-          padding: 18px;
+          font-weight: 900;
+          font-family: $sub-font;
+          padding: 12px 48px;
+          font-size: 16px;
           text-align: center;
           text-decoration: none;
-					transition: background-position 0.2s ease-in-out;
-          width: 240px;
-					&:hover {
-						background-position: center right 5px;
-					}
+          transition: background-position 0.2s ease-in-out;
+          &:active,
+          &.is-active {
+            background: $btn-color;
+            border: 1px solid transparent;
+          }
+          &:hover {
+            background: $btn-color;
+            border: 1px solid transparent;
+          }
           @include sp {
-            background-position: center right 5px;
-            background-size: 14px auto;
-            border-radius: 5px;
-            margin-top: 26px;
-            padding: 3px 5px;
-            width: 150px;
+            padding: 8px 0px;
+            width: 100%;
+          font-size: 14px
+
           }
         }
       }
-      @include sp {
-        margin: 0 20px;
-      }
+     
     }
   }
+  .mv_bottom-deco {
+    background-image: url('../imgs/home/home\ bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; 
+    pointer-events: none; 
+    @media screen and (max-width: 375px) {
+      background-image: url('../imgs/home/sp\ home\ bg.svg');
+    }
+  }
+
 }
 // Partner Section
 .hm_partner {
