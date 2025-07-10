@@ -1,0 +1,51 @@
+// 基本設定
+$pc: 768px; // PC
+$sp: 767px; //スマートフォン
+$base-width: 1180px;
+$txt-size: 1rem;
+$txt-size-sp: 0.75rem;
+$line-height: 2;
+$txt-font: 'Noto Sans JP', 'Arial', 'Helvetica', 'Noto Sans', sans-serif;
+$txt-color: #222;
+$base-color: #1F4C9F;
+$sub-color: #FFED7D;
+$bg01: #f6f6f6;
+$transition: .3s all ease-in-out;
+@mixin pc {
+  @media (min-width: ($pc)),
+  print {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+@mixin pc_hide {
+  @include pc {
+    display: none;
+  }
+}
+@mixin sp_hide {
+  @include sp {
+    display: none;
+  }
+}
+@mixin wrap {
+  margin: 0 auto;
+  max-width: $base-width;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 100%;
+}
+@mixin transition {
+  transition: all 0.3s;
+}
+@mixin a_alpha {
+  &:hover {
+    opacity: 0.7;
+  }
+}

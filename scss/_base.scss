@@ -1,0 +1,98 @@
+// ※※※※※このファイルは変更しないでください。※※※※※
+// 調整用ベーススタイル
+// update : 20190216
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: $txt-font;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary,
+div,
+span,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+th,
+td,
+a,
+img,
+label,
+form,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  height: auto;
+  line-height: 1;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+a {
+  background: transparent;
+  cursor: pointer;
+  outline: 0 none;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+}
+body {
+  color: $txt-color;
+  line-height: $line-height;
+}
+main {
+  flex: 1 1 auto;
+}
+@for $i from 1 through 10 {
+	.mg_tp#{$i * 5} {
+		margin-top: #{$i * 5}px;
+	}
+	.mg_bt#{$i * 5} {
+		margin-bottom: #{$i * 5}px;
+	}
+}
