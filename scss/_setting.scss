@@ -1,15 +1,18 @@
 // 基本設定
 $pc: 768px; // PC
 $sp: 767px; //スマートフォン
-$base-width: 1180px;
+$base-width: 1232px;
 $txt-size: 1rem;
 $txt-size-sp: 0.75rem;
 $line-height: 2;
-$txt-font: 'Noto Sans JP', 'Arial', 'Helvetica', 'Noto Sans', sans-serif;
-$txt-color: #222;
+$txt-font: 'Dela Gothic One', 'Arial', 'Helvetica', 'Noto Sans', sans-serif;
+$sub-font: 'Noto Sans', sans-serif;
+$txt-color: #111111;
+$hover-color: #2FD9FF;
 $base-color: #1F4C9F;
-$sub-color: #FFED7D;
-$bg01: #f6f6f6;
+$span01: #ff3b3b;
+$span02: #088fdc;
+$bg01: #FFFFFF;
 $transition: .3s all ease-in-out;
 @mixin pc {
   @media (min-width: ($pc)),
@@ -36,8 +39,8 @@ $transition: .3s all ease-in-out;
 @mixin wrap {
   margin: 0 auto;
   max-width: $base-width;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   position: relative;
   width: 100%;
 }
