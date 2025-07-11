@@ -1295,21 +1295,21 @@ footer .ft_info a {
     font-size: 14px;
   }
 }
-.hm_features .hm_features__content .hm_features__item:hover {
+.hm_features .hm_features__content .hm_features__item:hover, .hm_features .hm_features__content .hm_features__item.is-hover {
   gap: 23px;
 }
 @media (max-width: 767px) {
-  .hm_features .hm_features__content .hm_features__item:hover {
+  .hm_features .hm_features__content .hm_features__item:hover, .hm_features .hm_features__content .hm_features__item.is-hover {
     gap: 17px;
   }
 }
-.hm_features .hm_features__content .hm_features__item:hover .hm_features__item-point {
+.hm_features .hm_features__content .hm_features__item:hover .hm_features__item-point, .hm_features .hm_features__content .hm_features__item.is-hover .hm_features__item-point {
   opacity: 1;
   display: flex;
   max-height: 200px;
   transform: translateY(0);
 }
-.hm_features .hm_features__content .hm_features__item:hover .hm_features__item-title {
+.hm_features .hm_features__content .hm_features__item:hover .hm_features__item-title, .hm_features .hm_features__content .hm_features__item.is-hover .hm_features__item-title {
   color: #2FD9FF;
 }
 
