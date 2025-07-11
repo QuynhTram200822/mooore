@@ -21,3 +21,17 @@
 //     $('.hm_mainvisual .slick-dots').remove();
 //   }
 // });
+jQuery(function ($) {
+  $('.hm-works__side').slick({
+    infinite: true,
+    slidesToShow: 1, 
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true, 
+    centerMode: true, 
+    centerPadding: '0', 
+    
+  });
+});
+
+
