@@ -324,23 +324,27 @@
         }
       }
     }
-    .hm_features__item:hover, .hm_features__item.is-hover {
+
+    .hm_features__item:hover,
+    .hm_features__item.is-hover {
       gap: 23px;
 
       @include sp {
         gap: 17px;
       }
+
       .hm_features__item-point {
         opacity: 1;
         display: flex;
         max-height: 200px;
         transform: translateY(0);
       }
+
       .hm_features__item-title {
         color: $hover-color;
       }
     }
-   
+
   }
 }
 
@@ -579,7 +583,7 @@
   text-align: center;
 
   @include sp {
-    padding: 12px 0;
+    padding: 12px 0 41px;
   }
 
   &__head {
@@ -894,6 +898,7 @@
       }
     }
   }
+
   .scroll-indicator {
     display: flex;
     align-items: center;
@@ -953,19 +958,23 @@
 .hm_overview {
   background-color: $bg01;
   color: $txt-color;
-  padding: 79px 0;
+  padding: 79px 0 13px;
   position: relative;
+
   @include sp {
-    padding: 40px 0 73px;
+    padding: 40px 0 44px;
   }
+
   .hm_overview__title {
     text-align: center;
     padding-bottom: 48px;
     position: relative;
     z-index: 1;
+
     @include sp {
       padding-bottom: 23px;
     }
+
     .hm_overview__subtitle {
       font-family: $accent-font;
       text-transform: uppercase;
@@ -974,29 +983,35 @@
       line-height: 100%;
       letter-spacing: 0;
       margin-bottom: 25px;
+
       @include sp {
         font-size: 12px;
         margin-bottom: 13px;
       }
     }
+
     .hm_overview__heading {
       font-weight: 400;
       font-size: 48px;
       line-height: 100%;
       letter-spacing: 0;
+
       @include sp {
         font-size: 30px;
         padding: 0 10px;
       }
     }
   }
+
   .hm_overview__content {
     display: flex;
     gap: 20px;
+
     @include sp {
       flex-direction: column;
       gap: 5px;
     }
+
     .hm_overview__card {
       flex: 1;
       border: 4px solid #111111;
@@ -1004,18 +1019,21 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
       @include sp {
         flex-direction: row;
         gap: 25px;
         align-items: flex-start;
         padding: 21px 21px 2px 21px;
       }
+
       .hm_overview__card-image {
         width: 74px;
         height: 74px;
         object-fit: cover;
         margin-bottom: 27px;
       }
+
       .hm_overview__card-body {
         @include sp {
           display: flex;
@@ -1024,6 +1042,7 @@
           align-items: flex-start;
         }
       }
+
       .hm_overview__card-title {
         font-family: $accent-font;
         font-weight: 900;
@@ -1033,6 +1052,7 @@
         text-align: center;
         margin-bottom: 9px;
       }
+
       .hm_overview__card-desc {
         font-family: $accent-font;
         font-weight: 400;
@@ -1040,6 +1060,7 @@
         line-height: 156%;
         letter-spacing: 0;
         text-align: center;
+
         @include sp {
           text-align: left;
         }
@@ -1057,7 +1078,7 @@
   text-align: center;
 
   @include sp {
-    padding: 12px 0;
+    padding: 17px 0;
   }
 
   &__head {
@@ -1070,7 +1091,7 @@
     font-size: 16px;
     font-weight: 900;
     color: $txt-color;
-    margin: 4px 0 16px;
+    margin: 4px 11px 16px 0px;
     text-transform: uppercase;
 
     @include sp {
@@ -1098,11 +1119,13 @@
   &__wrapp {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 48px;
+    gap: 24px;
     margin-top: 48px;
 
     @include sp {
       grid-template-columns: 1fr;
+      margin-top: 24px;
+          gap: 15px;
     }
   }
 
@@ -1111,49 +1134,56 @@
     position: relative;
     max-width: 588px;
     background: #111111;
-    padding: 14px 29px;
-  .slick-dots {
-    align-items: center;
-    bottom: -25px;
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    left: 45.15%;
-    position: absolute;
+    padding: 27px 24px;
+    margin: 0 9px 0 -6px;
+    @include sp {
+      margin: 0;
+      padding: 14px 14px
+    }
 
-    li {
-      width: auto;
+    .slick-dots {
+      align-items: center;
+      bottom: -26px;
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      left: 47%;
+      position: absolute;
 
-      button {
-        background: #FFFFFF;
-        border: none;
-        border-radius: 50%;
-        font-size: 0;
-        height: 8px;
-        max-width: 8px;
-        opacity: .3;
-        padding: 0;
-        transition: all 0.3s ease;
-        width: 90px;
+      li {
+        width: auto;
 
-        &:hover {
-          cursor: pointer;
-        }
-      }
-
-      &.slick-active {
         button {
           background: #FFFFFF;
-          opacity: 1;
+          border: none;
+          border-radius: 50%;
+          font-size: 0;
+          height: 8px;
+          max-width: 8px;
+          opacity: .3;
+          padding: 0;
+          transition: all 0.3s ease;
+          width: 90px;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
+
+        &.slick-active {
+          button {
+            background: #FFFFFF;
+            opacity: 1;
+          }
+        }
+      }
+
+      @include sp {
+        bottom: -20px;
+        left: 44.1%;
       }
     }
 
-    @include sp {
-      bottom: 38px;
-      left: 44.1%;
-    }
-  }
     &::after {
       content: "";
       position: absolute;
@@ -1183,6 +1213,11 @@
           height: 100%;
           object-fit: cover;
         }
+
+        @include sp {
+          max-width: 315px;
+          height: 186px;
+        }
       }
     }
   }
@@ -1191,25 +1226,40 @@
   &__side-content {
     color: #fff;
     text-align: center;
-    padding: 16px;
+    padding: 35px 0 24px 0;
     font-family: $sub-font;
 
+    @include sp {
+      padding: 15px 0 0px 0;
+    }
 
     &-title {
       font-size: 32px;
       font-weight: 900;
       line-height: 1.56;
+
+      @include sp {
+        font-size: 18px;
+      }
     }
 
     &-note {
       font-size: 14px;
-      margin-bottom: 8px;
+      margin: 16px 4px 7px 13px;
       font-weight: 400;
       line-height: 1.56;
 
       span {
         font-size: 20px;
         font-weight: 700;
+
+      }
+
+      @include sp {
+        margin: 11px 4px 5px 5px;
+         span {
+        font-size: 16px;
+      }
       }
     }
 
@@ -1217,6 +1267,16 @@
       font-size: 20px;
       font-weight: 700;
       line-height: 1.56;
+      margin: 0 0 0 -17px;
+
+      @include sp {
+        font-size: 14px;
+      }
     }
+  }
+ .hm-works__slider:nth-child(2) {
+      .hm-works__content-note{
+margin: 11px 13px 0px 18px;
+      }
   }
 }
