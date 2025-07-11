@@ -1021,6 +1021,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border-bottom: 12px solid #111111;
   @include sp {
     padding: 56px 0 46px;
   }

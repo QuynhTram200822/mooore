@@ -1981,6 +1981,7 @@ footer .ft_info a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border-bottom: 12px solid #111111;
 }
 @media (max-width: 767px) {
   .hm_testimonials {
