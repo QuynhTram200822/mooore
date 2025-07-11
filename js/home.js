@@ -57,3 +57,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+jQuery(function ($) {
+  $(".hm_testimonials__slider").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});

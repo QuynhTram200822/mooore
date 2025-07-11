@@ -344,7 +344,6 @@
         color: $hover-color;
       }
     }
-
   }
 }
 
@@ -631,7 +630,6 @@
       grid-template-columns: repeat(1, 1fr);
       margin: 24px 0 0 0;
       gap: 16px;
-
     }
   }
 
@@ -650,7 +648,7 @@
     width: 100%;
 
     @include sp {
-      padding: 12px 20px
+      padding: 12px 20px;
     }
 
     &__img {
@@ -705,7 +703,7 @@
         border-bottom: 2.88px solid #111111;
         width: 50px;
         height: 50px;
-        font-size: 30.72px
+        font-size: 30.72px;
       }
     }
 
@@ -764,7 +762,6 @@
         }
 
         .problem-card__text p {
-
           margin: 14px 0 -14px 0;
         }
       }
@@ -781,7 +778,6 @@
       }
 
       .problem-card__img {
-
         transform: translateX(-8%) rotateY(-42deg) scaleX(0.84) scaleY(1.08) translateY(-5px);
         z-index: 2;
         pointer-events: none;
@@ -793,7 +789,6 @@
         pointer-events: none;
         margin: 2px 0 0 0;
       }
-
 
       @include sp {
         transform: none;
@@ -813,7 +808,6 @@
           transform: none;
           margin: 7px 0 -13px 0;
         }
-
       }
     }
   }
@@ -951,7 +945,6 @@
       transform: translateY(0);
     }
   }
-
 }
 
 // Overview Section
@@ -1067,9 +1060,87 @@
       }
     }
   }
+}
 
+// Testimonials Section
+.hm_testimonials {
+  padding: 88px 0 98px;
+  background-image: url(../imgs/home/bg-testimonials.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-bottom: 12px solid #111111;
 
+  @include sp {
+    padding: 56px 0 46px;
+  }
 
+  .hm_testimonials__card-header {
+    display: flex;
+    gap: 27px;
+    padding-left: 33px;
+    margin-bottom: 10px;
+
+    @include sp {
+      gap: 14px;
+      padding-left: 8px;
+      margin-bottom: 22px;
+    }
+
+    .hm_testimonials__icon {
+      @include sp {
+        width: 56px;
+        height: 42px;
+        object-fit: cover;
+      }
+    }
+
+    .hm_testimonials__label {
+      font-family: $accent-font;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .hm_testimonials__card-body {
+    padding-left: 103px;
+    width: 88%;
+
+    @include sp {
+      padding-left: 8px;
+      width: 99%;
+    }
+
+    .hm_testimonials__quote {
+      font-family: $accent-font;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 156%;
+      letter-spacing: 0;
+      margin-bottom: 32px;
+
+      @include sp {
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .hm_testimonials__author {
+      font-family: $accent-font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0;
+      text-transform: uppercase;
+
+      @include sp {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 //  Success Stories
@@ -1078,7 +1149,7 @@
   text-align: center;
 
   @include sp {
-    padding: 17px 0;
+    padding: 17px 0 45px 0
   }
 
   &__head {
@@ -1091,7 +1162,7 @@
     font-size: 16px;
     font-weight: 900;
     color: $txt-color;
-    margin: 4px 11px 16px 0px;
+    margin: 4px 1px 16px 0px;
     text-transform: uppercase;
 
     @include sp {
@@ -1125,7 +1196,7 @@
     @include sp {
       grid-template-columns: 1fr;
       margin-top: 24px;
-          gap: 15px;
+      gap: 15px;
     }
   }
 
@@ -1135,7 +1206,8 @@
     max-width: 588px;
     background: #111111;
     padding: 27px 24px;
-    margin: 0 9px 0 -6px;
+    margin: 0;
+
     @include sp {
       margin: 0;
       padding: 14px 14px
@@ -1257,9 +1329,10 @@
 
       @include sp {
         margin: 11px 4px 5px 5px;
-         span {
-        font-size: 16px;
-      }
+
+        span {
+          font-size: 16px;
+        }
       }
     }
 
@@ -1274,9 +1347,12 @@
       }
     }
   }
- .hm-works__slider:nth-child(2) {
-      .hm-works__content-note{
-margin: 11px 13px 0px 18px;
+
+  @include sp {
+    .hm-works__slider:nth-child(2) {
+      .hm-works__content-note {
+        margin: 11px 13px 0px 18px;
       }
+    }
   }
 }
