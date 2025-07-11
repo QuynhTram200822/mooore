@@ -291,21 +291,22 @@
         }
       }
     }
-    .hm_features__item:hover {
+    .hm_features__item:hover, .hm_features__item.is-hover {
       gap: 23px;
       @include sp {
         gap: 17px;
       }
+      .hm_features__item-point {
+        opacity: 1;
+        display: flex;
+        max-height: 200px;
+        transform: translateY(0);
+      }
+      .hm_features__item-title {
+        color: $hover-color;
+      }
     }
-    .hm_features__item:hover .hm_features__item-point {
-      opacity: 1;
-      display: flex;
-      max-height: 200px;
-      transform: translateY(0);
-    }
-    .hm_features__item:hover .hm_features__item-title {
-      color: $hover-color;
-    }
+   
   }
 }
 
