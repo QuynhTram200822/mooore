@@ -1115,7 +1115,7 @@ footer .ft_info a {
 .hm_features {
   background-color: #142131;
   color: #FFFFFF;
-  padding: 79px 0;
+  padding: 79px 0 81px;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -1348,7 +1348,7 @@ footer .ft_info a {
   line-height: 1.4;
 }
 .btn a__title span {
-  color: #008ECF;
+  color: #008ecf;
 }
 @media (max-width: 767px) {
   .btn a__title {
@@ -1403,7 +1403,7 @@ footer .ft_info a {
   left: -6%;
   width: 56px;
   height: 56px;
-  background-color: #FF3B3B;
+  background-color: #ff3b3b;
   color: #111;
   font-size: 32px;
   font-weight: 400;
@@ -1547,7 +1547,7 @@ footer .ft_info a {
   line-height: 1.4;
 }
 .hm-problem__title span {
-  color: #008ECF;
+  color: #008ecf;
 }
 @media (max-width: 767px) {
   .hm-problem__title {
@@ -1602,7 +1602,7 @@ footer .ft_info a {
   left: -6%;
   width: 56px;
   height: 56px;
-  background-color: #FF3B3B;
+  background-color: #ff3b3b;
   color: #111;
   font-size: 32px;
   font-weight: 400;
@@ -1715,6 +1715,118 @@ footer .ft_info a {
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
+}
+
+.hm_overview {
+  background-color: #FFFFFF;
+  color: #111111;
+  padding: 79px 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .hm_overview {
+    padding: 40px 0 73px;
+  }
+}
+.hm_overview .hm_overview__title {
+  text-align: center;
+  padding-bottom: 48px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .hm_overview .hm_overview__title {
+    padding-bottom: 23px;
+  }
+}
+.hm_overview .hm_overview__title .hm_overview__subtitle {
+  font-family: "Noto Sans JP", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .hm_overview .hm_overview__title .hm_overview__subtitle {
+    font-size: 12px;
+    margin-bottom: 13px;
+  }
+}
+.hm_overview .hm_overview__title .hm_overview__heading {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+@media (max-width: 767px) {
+  .hm_overview .hm_overview__title .hm_overview__heading {
+    font-size: 30px;
+    padding: 0 10px;
+  }
+}
+.hm_overview .hm_overview__content {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .hm_overview .hm_overview__content {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.hm_overview .hm_overview__content .hm_overview__card {
+  flex: 1;
+  border: 4px solid #111111;
+  padding: 20px 17px 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .hm_overview .hm_overview__content .hm_overview__card {
+    flex-direction: row;
+    gap: 25px;
+    align-items: flex-start;
+    padding: 21px 21px 2px 21px;
+  }
+}
+.hm_overview .hm_overview__content .hm_overview__card .hm_overview__card-image {
+  width: 74px;
+  height: 74px;
+  object-fit: cover;
+  margin-bottom: 27px;
+}
+@media (max-width: 767px) {
+  .hm_overview .hm_overview__content .hm_overview__card .hm_overview__card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.hm_overview .hm_overview__content .hm_overview__card .hm_overview__card-title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 156%;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 9px;
+}
+.hm_overview .hm_overview__content .hm_overview__card .hm_overview__card-desc {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 156%;
+  letter-spacing: 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .hm_overview .hm_overview__content .hm_overview__card .hm_overview__card-desc {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

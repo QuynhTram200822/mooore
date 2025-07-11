@@ -124,7 +124,7 @@
 .hm_features {
   background-color: #142131;
   color: $bg01;
-  padding: 79px 0;
+  padding: 79px 0 81px;
   position: relative;
   @include sp {
     padding: 40px 0 73px;
@@ -304,7 +304,6 @@
   position: relative;
   text-align: center;
 
-
   &__head {
     max-width: 563px;
     margin: 0 auto;
@@ -331,7 +330,7 @@
     line-height: 1.4;
 
     span {
-      color: #008ECF;
+      color: #008ecf;
     }
 
     @include sp {
@@ -346,7 +345,6 @@
 
     @include sp {
       grid-template-columns: repeat(1, 1fr);
-
     }
   }
 
@@ -393,7 +391,7 @@
       left: -6%;
       width: 56px;
       height: 56px;
-      background-color: #FF3B3B;
+      background-color: #ff3b3b;
       color: #111;
       font-size: 32px;
       font-weight: 400;
@@ -417,8 +415,6 @@
         width: 50px;
         height: 50px;
         font-size: 30.72px;
-
-
       }
     }
 
@@ -467,7 +463,6 @@
       }
     }
   }
-
 
   &__bottom {
     position: relative;
@@ -524,7 +519,6 @@
       background-position: center;
       z-index: -1;
     }
-
   }
 }
 // problem
@@ -532,7 +526,6 @@
   padding: 80px 0;
   text-align: center;
 
-
   &__head {
     max-width: 563px;
     margin: 0 auto;
@@ -559,7 +552,7 @@
     line-height: 1.4;
 
     span {
-      color: #008ECF;
+      color: #008ecf;
     }
 
     @include sp {
@@ -574,7 +567,6 @@
 
     @include sp {
       grid-template-columns: repeat(1, 1fr);
-
     }
   }
 
@@ -621,7 +613,7 @@
       left: -6%;
       width: 56px;
       height: 56px;
-      background-color: #FF3B3B;
+      background-color: #ff3b3b;
       color: #111;
       font-size: 32px;
       font-weight: 400;
@@ -645,8 +637,6 @@
         width: 50px;
         height: 50px;
         font-size: 30.72px;
-
-
       }
     }
 
@@ -695,7 +685,6 @@
       }
     }
   }
-
 
   &__bottom {
     position: relative;
@@ -752,6 +741,104 @@
       background-position: center;
       z-index: -1;
     }
+  }
+}
 
+// Overview Section
+.hm_overview {
+  background-color: $bg01;
+  color: $txt-color;
+  padding: 79px 0;
+  position: relative;
+  @include sp {
+    padding: 40px 0 73px;
+  }
+  .hm_overview__title {
+    text-align: center;
+    padding-bottom: 48px;
+    position: relative;
+    z-index: 1;
+    @include sp {
+      padding-bottom: 23px;
+    }
+    .hm_overview__subtitle {
+      font-family: $accent-font;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0;
+      margin-bottom: 25px;
+      @include sp {
+        font-size: 12px;
+        margin-bottom: 13px;
+      }
+    }
+    .hm_overview__heading {
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 100%;
+      letter-spacing: 0;
+      @include sp {
+        font-size: 30px;
+        padding: 0 10px;
+      }
+    }
+  }
+  .hm_overview__content {
+    display: flex;
+    gap: 20px;
+    @include sp {
+      flex-direction: column;
+      gap: 5px;
+    }
+    .hm_overview__card {
+      flex: 1;
+      border: 4px solid #111111;
+      padding: 20px 17px 11px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include sp {
+        flex-direction: row;
+        gap: 25px;
+        align-items: flex-start;
+        padding: 21px 21px 2px 21px;
+      }
+      .hm_overview__card-image {
+        width: 74px;
+        height: 74px;
+        object-fit: cover;
+        margin-bottom: 27px;
+      }
+      .hm_overview__card-body {
+        @include sp {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+      }
+      .hm_overview__card-title {
+        font-family: $accent-font;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 156%;
+        letter-spacing: 0;
+        text-align: center;
+        margin-bottom: 9px;
+      }
+      .hm_overview__card-desc {
+        font-family: $accent-font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 156%;
+        letter-spacing: 0;
+        text-align: center;
+        @include sp {
+          text-align: left;
+        }
+      }
+    }
   }
 }
