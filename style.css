@@ -1295,21 +1295,25 @@ footer .ft_info a {
     font-size: 14px;
   }
 }
-.hm_features .hm_features__content .hm_features__item:hover, .hm_features .hm_features__content .hm_features__item.is-hover {
+.hm_features .hm_features__content .hm_features__item:hover,
+.hm_features .hm_features__content .hm_features__item.is-hover {
   gap: 23px;
 }
 @media (max-width: 767px) {
-  .hm_features .hm_features__content .hm_features__item:hover, .hm_features .hm_features__content .hm_features__item.is-hover {
+  .hm_features .hm_features__content .hm_features__item:hover,
+  .hm_features .hm_features__content .hm_features__item.is-hover {
     gap: 17px;
   }
 }
-.hm_features .hm_features__content .hm_features__item:hover .hm_features__item-point, .hm_features .hm_features__content .hm_features__item.is-hover .hm_features__item-point {
+.hm_features .hm_features__content .hm_features__item:hover .hm_features__item-point,
+.hm_features .hm_features__content .hm_features__item.is-hover .hm_features__item-point {
   opacity: 1;
   display: flex;
   max-height: 200px;
   transform: translateY(0);
 }
-.hm_features .hm_features__content .hm_features__item:hover .hm_features__item-title, .hm_features .hm_features__content .hm_features__item.is-hover .hm_features__item-title {
+.hm_features .hm_features__content .hm_features__item:hover .hm_features__item-title,
+.hm_features .hm_features__content .hm_features__item.is-hover .hm_features__item-title {
   color: #2FD9FF;
 }
 
@@ -1968,6 +1972,84 @@ footer .ft_info a {
 @media (max-width: 767px) {
   .hm_overview .hm_overview__content .hm_overview__card .hm_overview__card-desc {
     text-align: left;
+  }
+}
+
+.hm_testimonials {
+  padding: 88px 0 98px;
+  background-image: url(../imgs/home/bg-testimonials.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .hm_testimonials {
+    padding: 56px 0 46px;
+  }
+}
+.hm_testimonials .hm_testimonials__card-header {
+  display: flex;
+  gap: 27px;
+  padding-left: 33px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .hm_testimonials .hm_testimonials__card-header {
+    gap: 14px;
+    padding-left: 8px;
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .hm_testimonials .hm_testimonials__card-header .hm_testimonials__icon {
+    width: 56px;
+    height: 42px;
+    object-fit: cover;
+  }
+}
+.hm_testimonials .hm_testimonials__card-header .hm_testimonials__label {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.hm_testimonials .hm_testimonials__card-body {
+  padding-left: 103px;
+  width: 88%;
+}
+@media (max-width: 767px) {
+  .hm_testimonials .hm_testimonials__card-body {
+    padding-left: 8px;
+    width: 99%;
+  }
+}
+.hm_testimonials .hm_testimonials__card-body .hm_testimonials__quote {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 156%;
+  letter-spacing: 0;
+  margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .hm_testimonials .hm_testimonials__card-body .hm_testimonials__quote {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}
+.hm_testimonials .hm_testimonials__card-body .hm_testimonials__author {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .hm_testimonials .hm_testimonials__card-body .hm_testimonials__author {
+    font-size: 14px;
   }
 }
 
