@@ -1312,4 +1312,409 @@ footer .ft_info a {
   color: #2FD9FF;
 }
 
+.btn a {
+  background: #1F4C9F;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 18px 0;
+  position: relative;
+  text-align: center;
+}
+.btn a__head {
+  max-width: 563px;
+  margin: 0 auto;
+}
+.btn a__catch {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #111111;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 767px) {
+  .btn a__catch {
+    font-size: 12px;
+  }
+}
+.btn a__title {
+  font-family: "Dela Gothic One", "Arial", "Helvetica", "Noto Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #111111;
+  line-height: 1.4;
+}
+.btn a__title span {
+  color: #008ECF;
+}
+@media (max-width: 767px) {
+  .btn a__title {
+    font-size: 30px;
+  }
+}
+.btn a .hm-problem__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  perspective: 1200px;
+}
+@media (max-width: 767px) {
+  .btn a .hm-problem__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.btn a .problem-card {
+  position: relative;
+  height: 425px;
+  border: 3px solid #111111;
+  padding: 13px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.4s ease;
+  transform-style: preserve-3d;
+  margin: 0 auto;
+  max-width: 384px;
+  width: 100%;
+}
+.btn a .problem-card__img {
+  margin-bottom: 16px;
+}
+.btn a .problem-card__img img {
+  width: 100%;
+  max-width: 240px;
+  max-height: 240px;
+  object-fit: cover;
+}
+.btn a .problem-card__text p {
+  font-size: 20px;
+  color: #111111;
+  margin: 8px 0;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+.btn a .problem-card__order {
+  position: absolute;
+  top: 43.5%;
+  left: -6%;
+  width: 56px;
+  height: 56px;
+  background-color: #FF3B3B;
+  color: #111;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Dela Gothic One", "Arial", "Helvetica", "Noto Sans", sans-serif;
+  border-radius: 20px;
+  border: 3px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  .btn a .problem-card__order {
+    top: 0;
+    left: 0px;
+    border-radius: 0 0 19.2px 0;
+    border: none;
+    border-right: 2.88px solid #111111;
+    border-bottom: 2.88px solid #111111;
+    width: 50px;
+    height: 50px;
+    font-size: 30.72px;
+  }
+}
+.btn a .problem-card--left {
+  transform: rotateY(-25deg) scale(0.928);
+  margin-right: -8%;
+  z-index: 1;
+}
+.btn a .problem-card--left .problem-card__order {
+  transform: rotateY(77deg) scale(1.13);
+}
+@media (max-width: 767px) {
+  .btn a .problem-card--left {
+    transform: none;
+    margin: 0;
+  }
+  .btn a .problem-card--left .problem-card__order {
+    transform: none;
+  }
+}
+.btn a .problem-card--center {
+  transform: none;
+  z-index: 2;
+}
+.btn a .problem-card--right {
+  transform: rotateY(25deg) scale(0.928);
+  margin-left: -8%;
+  z-index: 1;
+}
+.btn a .problem-card--right .problem-card__order {
+  transform: translateZ(50px) rotateY(-26deg) scale(0.928);
+  left: -10%;
+}
+@media (max-width: 767px) {
+  .btn a .problem-card--right {
+    transform: none;
+    margin: 0;
+  }
+  .btn a .problem-card--right .problem-card__order {
+    transform: none;
+    left: 0;
+  }
+}
+.btn a__bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 995.8px;
+  margin: 0 auto;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+.btn a__bottom-image img {
+  max-width: 100%;
+  height: auto;
+}
+.btn a__bottom-content {
+  text-align: left;
+  max-width: 500px;
+}
+.btn a__bottom-texts {
+  margin-bottom: 12px;
+}
+.btn a__bottom-texts p {
+  font-size: 28px;
+  font-weight: 900;
+  color: #111111;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.56;
+}
+.btn a__bottom-note {
+  font-size: 16px;
+  color: #111111;
+  font-weight: 900;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.56;
+}
+.btn a__bottom::after {
+  content: "";
+  position: absolute;
+  top: 142.47px;
+  left: -22px;
+  width: 995.77px;
+  height: 110.75px;
+  background-image: url("../imgs/home/Vector 3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.hm-problem {
+  padding: 80px 0;
+  text-align: center;
+}
+.hm-problem__head {
+  max-width: 563px;
+  margin: 0 auto;
+}
+.hm-problem__catch {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #111111;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 767px) {
+  .hm-problem__catch {
+    font-size: 12px;
+  }
+}
+.hm-problem__title {
+  font-family: "Dela Gothic One", "Arial", "Helvetica", "Noto Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #111111;
+  line-height: 1.4;
+}
+.hm-problem__title span {
+  color: #008ECF;
+}
+@media (max-width: 767px) {
+  .hm-problem__title {
+    font-size: 30px;
+  }
+}
+.hm-problem .hm-problem__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  perspective: 1200px;
+}
+@media (max-width: 767px) {
+  .hm-problem .hm-problem__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.hm-problem .problem-card {
+  position: relative;
+  height: 425px;
+  border: 3px solid #111111;
+  padding: 13px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.4s ease;
+  transform-style: preserve-3d;
+  margin: 0 auto;
+  max-width: 384px;
+  width: 100%;
+}
+.hm-problem .problem-card__img {
+  margin-bottom: 16px;
+}
+.hm-problem .problem-card__img img {
+  width: 100%;
+  max-width: 240px;
+  max-height: 240px;
+  object-fit: cover;
+}
+.hm-problem .problem-card__text p {
+  font-size: 20px;
+  color: #111111;
+  margin: 8px 0;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+.hm-problem .problem-card__order {
+  position: absolute;
+  top: 43.5%;
+  left: -6%;
+  width: 56px;
+  height: 56px;
+  background-color: #FF3B3B;
+  color: #111;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Dela Gothic One", "Arial", "Helvetica", "Noto Sans", sans-serif;
+  border-radius: 20px;
+  border: 3px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  .hm-problem .problem-card__order {
+    top: 0;
+    left: 0px;
+    border-radius: 0 0 19.2px 0;
+    border: none;
+    border-right: 2.88px solid #111111;
+    border-bottom: 2.88px solid #111111;
+    width: 50px;
+    height: 50px;
+    font-size: 30.72px;
+  }
+}
+.hm-problem .problem-card--left {
+  transform: rotateY(-25deg) scale(0.928);
+  margin-right: -8%;
+  z-index: 1;
+}
+.hm-problem .problem-card--left .problem-card__order {
+  transform: rotateY(77deg) scale(1.13);
+}
+@media (max-width: 767px) {
+  .hm-problem .problem-card--left {
+    transform: none;
+    margin: 0;
+  }
+  .hm-problem .problem-card--left .problem-card__order {
+    transform: none;
+  }
+}
+.hm-problem .problem-card--center {
+  transform: none;
+  z-index: 2;
+}
+.hm-problem .problem-card--right {
+  transform: rotateY(25deg) scale(0.928);
+  margin-left: -8%;
+  z-index: 1;
+}
+.hm-problem .problem-card--right .problem-card__order {
+  transform: translateZ(50px) rotateY(-26deg) scale(0.928);
+  left: -10%;
+}
+@media (max-width: 767px) {
+  .hm-problem .problem-card--right {
+    transform: none;
+    margin: 0;
+  }
+  .hm-problem .problem-card--right .problem-card__order {
+    transform: none;
+    left: 0;
+  }
+}
+.hm-problem__bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 995.8px;
+  margin: 0 auto;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+.hm-problem__bottom-image img {
+  max-width: 100%;
+  height: auto;
+}
+.hm-problem__bottom-content {
+  text-align: left;
+  max-width: 500px;
+}
+.hm-problem__bottom-texts {
+  margin-bottom: 12px;
+}
+.hm-problem__bottom-texts p {
+  font-size: 28px;
+  font-weight: 900;
+  color: #111111;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.56;
+}
+.hm-problem__bottom-note {
+  font-size: 16px;
+  color: #111111;
+  font-weight: 900;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.56;
+}
+.hm-problem__bottom::after {
+  content: "";
+  position: absolute;
+  top: 142.47px;
+  left: -22px;
+  width: 995.77px;
+  height: 110.75px;
+  background-image: url("../imgs/home/Vector 3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=style.css.map */
